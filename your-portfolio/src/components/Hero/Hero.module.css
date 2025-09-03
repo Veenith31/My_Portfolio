@@ -1,0 +1,119 @@
+
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1.5rem;
+  position: relative; 
+  overflow: hidden; 
+}
+
+
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; 
+}
+
+
+.heroContent, .leftSidebar, .rightSidebar {
+  position: relative;
+  z-index: 2;
+}
+
+.heroContent {
+  max-width: 800px;
+}
+
+.title {
+  font-size: clamp(2.5rem, 8vw, 4.5rem);
+  background: linear-gradient(90deg, var(--text-primary), var(--primary-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto 2.5rem auto;
+  color: var(--text-secondary);
+}
+
+.ctaButton {
+  background-color: var(--primary-accent);
+  color: var(--background-dark);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+}
+
+.ctaButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.2);
+}
+
+
+.leftSidebar, .rightSidebar {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.leftSidebar {
+  left: 40px;
+}
+
+.rightSidebar {
+  right: 40px;
+}
+
+.line {
+  width: 1px;
+  height: 90px;
+  background-color: var(--text-secondary);
+}
+
+.leftSidebar a {
+  color: var(--text-secondary);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.leftSidebar a:hover {
+  color: var(--primary-accent);
+  transform: translateY(-3px);
+}
+
+.emailLink {
+  writing-mode: vertical-rl;
+  color: var(--text-secondary);
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.emailLink:hover {
+  color: var(--primary-accent);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .leftSidebar, .rightSidebar {
+    display: none;
+  }
+}

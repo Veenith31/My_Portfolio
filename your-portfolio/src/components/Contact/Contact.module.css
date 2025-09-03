@@ -1,0 +1,47 @@
+.contact {
+  text-align: center;
+  background-color: var(--background-light);
+  padding: 6rem 1.5rem;
+  border-bottom: none;
+}
+
+.contact p {
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+}
+
+.contactButton {
+  background-color: var(--primary-accent);
+  color: var(--background-dark);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block; 
+}
+
+.contactButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(56, 189, 248, 0.3);
+}
+
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.socialLink {
+  color: var(--text-secondary);
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialLink:hover {
+  color: var(--primary-accent);
+  transform: scale(1.2);
+}

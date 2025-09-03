@@ -1,0 +1,21 @@
+.skills {
+  padding-bottom: 6rem;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.skillItem {
+  background-color: var(--background-light);
+  color: var(--text-secondary);
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}
